@@ -1,35 +1,35 @@
-
+# -*- coding: utf-8 -*-
 def string_to_ints(s):
     try:
         return int(s)
     except ValueError:
-        return f'Ошибка: невозможно преобразовать {s} в целое число.'
+        return f'ГЋГёГЁГЎГЄГ : Г­ГҐГўГ®Г§Г¬Г®Г¦Г­Г® ГЇГ°ГҐГ®ГЎГ°Г Г§Г®ГўГ ГІГј {s} Гў Г¶ГҐГ«Г®ГҐ Г·ГЁГ±Г«Г®.'
 
 def read_file(filename):
     try:
         with open(filename, mode='r', encoding='utf8') as file:
             return file.read()
     except FileNotFoundError:
-        return f'Ошибка: файл {filename} не найден.'
+        return f'ГЋГёГЁГЎГЄГ : ГґГ Г©Г« {filename} Г­ГҐ Г­Г Г©Г¤ГҐГ­.'
     except IOError:
-        return f'Ошибка ввода/вывода при работе с файлом {filename}.'
+        return f'ГЋГёГЁГЎГЄГ  ГўГўГ®Г¤Г /ГўГ»ГўГ®Г¤Г  ГЇГ°ГЁ Г°Г ГЎГ®ГІГҐ Г± ГґГ Г©Г«Г®Г¬ {filename}.'
 
 
 def divide_number(a, b):
     try:
         return a / b
     except ZeroDivisionError:
-        return 'Ошибка: деление на ноль'
+        return 'ГЋГёГЁГЎГЄГ : Г¤ГҐГ«ГҐГ­ГЁГҐ Г­Г  Г­Г®Г«Гј'
     except TypeError:
-        return 'Ошибка: аргументы должны быть числами.'
+        return 'ГЋГёГЁГЎГЄГ : Г Г°ГЈГіГ¬ГҐГ­ГІГ» Г¤Г®Г«Г¦Г­Г» ГЎГ»ГІГј Г·ГЁГ±Г«Г Г¬ГЁ.'
 
 def acces_list_element(lst, index):
     try:
         return lst[index]
     except IndexError:
-        return f'Ошибка: индекс {index} вне диапазона списка.'
+        return f'ГЋГёГЁГЎГЄГ : ГЁГ­Г¤ГҐГЄГ± {index} ГўГ­ГҐ Г¤ГЁГ ГЇГ Г§Г®Г­Г  Г±ГЇГЁГ±ГЄГ .'
     except TypeError:
-        return 'Ошибка: индекс должен быть числом.'
+        return 'ГЋГёГЁГЎГЄГ : ГЁГ­Г¤ГҐГЄГ± Г¤Г®Г«Г¦ГҐГ­ ГЎГ»ГІГј Г·ГЁГ±Г«Г®Г¬.'
 
 print(divide_number(10, 't'))
 print(divide_number(10, 0))
